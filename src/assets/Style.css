@@ -58,3 +58,9 @@ background: white;
     left: 0;
     margin: 10px;
 }
+
+.score-val{
+    color: red;
+    font-weight: bold;
+
+}
