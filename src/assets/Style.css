@@ -39,3 +39,22 @@
     transform: translate(-50%, -50%);
     text-align: center;
 }
+.messageStyle{
+background: white;
+    padding: 30px;
+    box-shadow: rgba(0,0,0,24) 0px 3px 8px;
+    border-radius: 5%;
+}
+.score{
+    position: relative;
+    z-index: 10;
+    height: 10vh;
+    font-size: 10vh;
+    font-weight: 100;
+    color: white;
+    -webkit-text-stroke-width:2px ;
+    -webkit-text-stroke-color: black;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
