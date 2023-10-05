@@ -32,6 +32,16 @@ document.addEventListener('keydown', (e) => {
 
 function play() {
     function move() {
+        if (game_state != 'Play') return;
+
+        let pipe_sprite = document.querySelectorAll('.pipe_sprite');
+        pipe_sprite.forEach((element) => {
+            let pipe_sprite_props = element.getBoundingClientRect();
+            bird_props = bird.getBoundingClientRect();
+
+
+        });
 
     }
+
 }
