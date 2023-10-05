@@ -5,3 +5,18 @@ let img = document.getElementById('bird-1');
 let bird_props =bird.getBoundingClientRect();
 
 let background = document.querySelector('.background').getBoundingClientRect();
+let score_val = document.querySelector('.score_val');
+let message = document.querySelector('.message');
+let score_title =document.querySelector('.score_title');
+
+let game_state = 'Start';
+img.style.display ='none';
+message.classList.add('messageStyle');
+
+document.addEventListener('keydown',(e) =>{
+    if (e.key=='Enter' && game_state != 'play'){
+        document.querySelectorAll('.pipe_sprite').forEach((e) => {
+            e.remove()
+        })
+    }
+})
