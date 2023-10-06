@@ -2,8 +2,10 @@ let move_speed = 3, grativy = 0.5;
 let bird = document.querySelector('.bird');
 let img = document.getElementById('bird-1');
 
+// getting bird element properties
 let bird_props = bird.getBoundingClientRect();
 
+// This method returns DOMReact -> top, right, bottom, left, x, y, width and height
 let background = document.querySelector('.background').getBoundingClientRect();
 let score_val = document.querySelector('.score_val');
 let message = document.querySelector('.message');
@@ -39,7 +41,7 @@ function play() {
             let pipe_sprite_props = element.getBoundingClientRect();
             bird_props = bird.getBoundingClientRect();
 
-            if (pipe_sprite_props.right <= e) {
+            if (pipe_sprite_props.right <= 0) {
                 element.remove();
             } else {
                 if (bird_props.left < pipe_sprite_props.left + pipe_sprite_props.width && bird_props.left + bird_props.width > pipe_sprite_props.left && bird_props.top < pipe_sprite_props.top + pipe_sprite_props.height && bird_props.top + bird_props.height > pipe_sprite_props.top){
