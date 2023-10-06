@@ -71,6 +71,17 @@ function play() {
                 bird_dy = -7.6 ;
             }
         });
-        
+        document.addEventListener('keyup',(e) => {
+            if (e.key == 'ArrowUp' || e.key == ' '){
+                img.src ='assets/bird-removebg-preview.png';
+            }
+        });
+        if (bird_props.top <= 0 || bird_props.bottom >= background.bottom){
+            game_state ='End';
+            message.style.left = '28vw'
+            window.location.reload();
+            message.classList.remove('messageStyle');
+            return;
+        }
     }
 }
