@@ -46,7 +46,7 @@ function play() {
             } else {
                 if (bird_props.left < pipe_sprite_props.left + pipe_sprite_props.width && bird_props.left + bird_props.width > pipe_sprite_props.left && bird_props.top < pipe_sprite_props.top + pipe_sprite_props.height && bird_props.top + bird_props.height > pipe_sprite_props.top){
                     game_state = 'End';
-                    message.innerHTML = 'Game Over'.fontcolor('red') + '<br> Press Enter To Restart';
+                    message.innerHTML = 'Game Over 😒'.fontcolor('red') + '<br> Press Enter To Restart';
                     message.classList.add('messageStyle');
                     img.style.display = 'none';
                     return;
@@ -69,13 +69,13 @@ function play() {
         bird_dy = bird_dy + grativy;
         document.addEventListener('keydown',(e) =>{
             if(e.key == 'ArrowUp' || e.key == ' '){
-                img.src = 'assets/bird-removebg-preview.png';
+                img.src = 'assets/mee.png';
                 bird_dy = -7.6 ;
             }
         });
         document.addEventListener('keyup',(e) => {
             if (e.key == 'ArrowUp' || e.key == ' '){
-                img.src ='assets/bird-removebg-preview.png';
+                img.src ='assets/mee.png';
             }
         });
         if (bird_props.top <= 0 || bird_props.bottom >= background.bottom){

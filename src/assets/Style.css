@@ -7,7 +7,8 @@
 .background {
     height: 100vh;
     width: 100vw;
-    background: url('gameBackground.jpg') no-repeat center center fixed;
+    background: url('spacee.jpg') no-repeat center center fixed;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -27,7 +28,8 @@
     left: 100vw;
     height: 70vh;
     width: 6vw;
-    background:radial-gradient(lightgreen 50%, green);
+    background:radial-gradient(lightblue 50%, blueviolet);
+ /*   background: black;*/
     border: 5px solid black;
 }
 .message {
